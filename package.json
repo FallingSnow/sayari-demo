@@ -1,0 +1,57 @@
+{
+  "name": "sayari-demo",
+  "version": "0.1.0",
+  "description": "Sayari Developer Challenge",
+  "main": "src/server/index.js",
+  "browser": "src/web/index.html",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "NODE_ENV=development nodemon --ext ts --watch src index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FallingSnow/sayari-demo.git"
+  },
+  "keywords": [
+    "sayari",
+    "graphql",
+    "redis",
+    "graph",
+    "openapi"
+  ],
+  "author": "Ayrton Sparling",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/FallingSnow/sayari-demo/issues"
+  },
+  "homepage": "https://github.com/FallingSnow/sayari-demo#readme",
+  "dependencies": {
+    "@graphql-tools/schema": "^7.1.5",
+    "@swc/core": "^1.2.66",
+    "@swc/register": "^0.1.7",
+    "browserslist": "^4.16.6",
+    "graphql": "^15.5.1",
+    "graphql-jit": "^0.5.2",
+    "klaw": "^3.0.0",
+    "mime": "^2.5.2",
+    "pino": "^6.13.0",
+    "redis-modules-sdk": "^0.8.1",
+    "uWebSockets.js": "github:uNetworking/uWebSockets.js#v19.3.0",
+    "yargs": "^17.0.1"
+  },
+  "devDependencies": {
+    "@swc/cli": "^0.1.46",
+    "@types/klaw": "^3.0.2",
+    "@types/node": "^16.4.0",
+    "@types/yargs": "^17.0.2",
+    "3d-force-graph": "^1.70.5",
+    "chokidar": "^3.5.2",
+    "goober": "^2.0.39",
+    "nodemon": "^2.0.12",
+    "pino-pretty": "^5.1.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "swr": "^0.5.6"
+  }
+}

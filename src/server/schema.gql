@@ -1,0 +1,51 @@
+type User {
+  _id: ID!,
+  id: String!,
+  name: String!,
+  posts: [Post]!,
+  comments: [Comment]!,
+  answers: [Answer]!,
+}
+
+type Comment {
+  _id: ID!,
+  id: String!,
+  body: String!,
+  user: User!
+}
+
+type Post {
+  _id: ID!,
+  id: String!,
+  title: String!,
+  body: String!,
+  creation: String!,
+  score: Int!,
+  user: User!
+  comments: [Comment]!,
+  answers: [Answer]!
+}
+
+type Answer {
+  _id: ID!,
+  id: String!,
+  body: String!,
+  creation: String!,
+  score: Int!,
+  user: User!,
+  accepted: Boolean!,
+  comments: [Comment]!
+  answers: Post
+}
+
+union SearchResult = Post | Answer | Comment | User
+
+type Query {
+  search(keywords: String): [SearchResult]!,
+  posts(graph: Boolean = false): [Post]!,
+  users: [User]!,
+}
+
+type Mutation {
+  delete(_id: ID): Int!
+}

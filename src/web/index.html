@@ -1,0 +1,166 @@
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sayari Developer Challenge</title>
+
+  <!-- Javascript -->
+  <!--
+  JSPM Generator Import Map
+  Edit URL: https://generator.jspm.io/#dY9BDsIgFERZdeNZ+IU2Wt1xCQ9A4dOiLTQftL29kpiYaHQ5L/MymapibPdg55B9ntCy1nIXySAfSC+jktAJ2LMhxh5JNSCgPX2mephir6cvuBA6vyGx6FwyhBi40eGukxIgQdYF6Yx8jXT9X/IhefsuFcNkbuOsZFdGmhf4FepL2jjdyqUZWVqpvBAgeI9Zw5HlsSzxtJDPmHErEhygeQLa3q/LCAE
+-->
+<script type="importmap-shim">
+  {
+    "imports": {
+      "3d-force-graph": "https://ga.jspm.io/npm:3d-force-graph@1.70.5/dist/3d-force-graph.module.js",
+      "goober": "https://ga.jspm.io/npm:goober@2.0.39/dist/goober.modern.js",
+      "goober/global": "https://ga.jspm.io/npm:goober@2.0.39/global/dist/goober-global.modern.js",
+      "goober/prefixer": "https://ga.jspm.io/npm:goober@2.0.39/prefixer/dist/goober-autoprefixer.modern.js",
+      "offscreen-canvas/create-worker": "https://ga.jspm.io/npm:offscreen-canvas@0.1.1/create-worker.js",
+      "offscreen-canvas/inside-worker": "https://ga.jspm.io/npm:offscreen-canvas@0.1.1/inside-worker.js",
+      "react": "https://ga.jspm.io/npm:react@17.0.2/index.js",
+      "react-dom": "https://ga.jspm.io/npm:react-dom@17.0.2/index.js",
+      "react/jsx-runtime": "https://ga.jspm.io/npm:react@17.0.2/jsx-runtime.js",
+      "swr": "https://ga.jspm.io/npm:swr@1.0.0-beta.8/dist/index.esm.js",
+      "three-spritetext": "https://ga.jspm.io/npm:three-spritetext@1.6.2/dist/three-spritetext.common.js"
+    },
+    "scopes": {
+      "https://ga.jspm.io/": {
+        "@babel/runtime/helpers/esm/assertThisInitialized": "https://ga.jspm.io/npm:@babel/runtime@7.14.8/helpers/esm/assertThisInitialized.js",
+        "@babel/runtime/helpers/esm/extends": "https://ga.jspm.io/npm:@babel/runtime@7.14.8/helpers/esm/extends.js",
+        "@babel/runtime/helpers/esm/inheritsLoose": "https://ga.jspm.io/npm:@babel/runtime@7.14.8/helpers/esm/inheritsLoose.js",
+        "@babel/runtime/helpers/esm/taggedTemplateLiteralLoose": "https://ga.jspm.io/npm:@babel/runtime@7.14.8/helpers/esm/taggedTemplateLiteralLoose.js",
+        "@babel/runtime/helpers/esm/wrapNativeSuper": "https://ga.jspm.io/npm:@babel/runtime@7.14.8/helpers/esm/wrapNativeSuper.js",
+        "@tweenjs/tween.js": "https://ga.jspm.io/npm:@tweenjs/tween.js@18.6.4/dist/tween.cjs.js",
+        "accessor-fn": "https://ga.jspm.io/npm:accessor-fn@1.3.1/dist/accessor-fn.module.js",
+        "d3-array": "https://ga.jspm.io/npm:d3-array@3.0.1/src/index.js",
+        "d3-binarytree": "https://ga.jspm.io/npm:d3-binarytree@0.2.0/dist/d3-binarytree.js",
+        "d3-color": "https://ga.jspm.io/npm:d3-color@3.0.1/src/index.js",
+        "d3-dispatch": "https://ga.jspm.io/npm:d3-dispatch@3.0.1/src/index.js",
+        "d3-force-3d": "https://ga.jspm.io/npm:d3-force-3d@3.0.2/src/index.js",
+        "d3-format": "https://ga.jspm.io/npm:d3-format@3.0.1/src/index.js",
+        "d3-interpolate": "https://ga.jspm.io/npm:d3-interpolate@3.0.1/src/index.js",
+        "d3-octree": "https://ga.jspm.io/npm:d3-octree@0.2.0/dist/d3-octree.js",
+        "d3-quadtree": "https://ga.jspm.io/npm:d3-quadtree@3.0.1/src/index.js",
+        "d3-scale": "https://ga.jspm.io/npm:d3-scale@4.0.0/src/index.js",
+        "d3-scale-chromatic": "https://ga.jspm.io/npm:d3-scale-chromatic@3.0.0/src/index.js",
+        "d3-time": "https://ga.jspm.io/npm:d3-time@3.0.0/src/index.js",
+        "d3-time-format": "https://ga.jspm.io/npm:d3-time-format@4.0.0/src/index.js",
+        "d3-timer": "https://ga.jspm.io/npm:d3-timer@3.0.1/src/index.js",
+        "data-joint": "https://ga.jspm.io/npm:data-joint@1.2.3/dist/data-joint.common.js",
+        "debounce": "https://ga.jspm.io/npm:debounce@1.2.1/index.js",
+        "dequal/lite": "https://ga.jspm.io/npm:dequal@2.0.2/lite/index.mjs",
+        "index-array-by": "https://ga.jspm.io/npm:index-array-by@1.3.1/dist/index-array-by.common.js",
+        "internmap": "https://ga.jspm.io/npm:internmap@2.0.1/src/index.js",
+        "kapsule": "https://ga.jspm.io/npm:kapsule@1.13.4/dist/kapsule.common.js",
+        "ngraph.events": "https://ga.jspm.io/npm:ngraph.events@1.2.1/index.js",
+        "ngraph.forcelayout": "https://ga.jspm.io/npm:ngraph.forcelayout@3.1.0/index.js",
+        "ngraph.graph": "https://ga.jspm.io/npm:ngraph.graph@19.1.0/index.js",
+        "ngraph.merge": "https://ga.jspm.io/npm:ngraph.merge@1.0.0/index.js",
+        "ngraph.random": "https://ga.jspm.io/npm:ngraph.random@1.1.0/index.js",
+        "object-assign": "https://ga.jspm.io/npm:object-assign@4.1.1/index.js",
+        "polished": "https://ga.jspm.io/npm:polished@4.1.3/dist/polished.esm.js",
+        "process": "https://ga.jspm.io/npm:@jspm/core@2.0.0-beta.7/nodelibs/process.js",
+        "scheduler": "https://ga.jspm.io/npm:scheduler@0.20.2/index.js",
+        "three": "https://ga.jspm.io/npm:three@0.130.1/build/three.module.js",
+        "three-forcegraph": "https://ga.jspm.io/npm:three-forcegraph@1.39.1/dist/three-forcegraph.module.js",
+        "three-render-objects": "https://ga.jspm.io/npm:three-render-objects@1.26.4/dist/three-render-objects.module.js",
+        "three/examples/jsm/controls/DragControls.js": "https://ga.jspm.io/npm:three@0.130.1/examples/jsm/controls/DragControls.js",
+        "three/examples/jsm/controls/FlyControls.js": "https://ga.jspm.io/npm:three@0.130.1/examples/jsm/controls/FlyControls.js",
+        "three/examples/jsm/controls/OrbitControls.js": "https://ga.jspm.io/npm:three@0.130.1/examples/jsm/controls/OrbitControls.js",
+        "three/examples/jsm/controls/TrackballControls.js": "https://ga.jspm.io/npm:three@0.130.1/examples/jsm/controls/TrackballControls.js",
+        "three/examples/jsm/postprocessing/EffectComposer.js": "https://ga.jspm.io/npm:three@0.130.1/examples/jsm/postprocessing/EffectComposer.js",
+        "three/examples/jsm/postprocessing/RenderPass.js": "https://ga.jspm.io/npm:three@0.130.1/examples/jsm/postprocessing/RenderPass.js",
+        "tinycolor2": "https://ga.jspm.io/npm:tinycolor2@1.4.2/tinycolor.js"
+      }
+    }
+  }
+  </script>
+  
+  <!-- ES Module Shims: Import maps polyfill for modules browsers without import maps support (all except Chrome 89+) -->
+  <script async src="https://ga.jspm.io/npm:es-module-shims@0.12.1/dist/es-module-shims.min.js"></script>
+  
+  <link rel="modulepreload" href="https://ga.jspm.io/npm:3d-force-graph@1.70.5/dist/3d-force-graph.module.js"/>
+  <link rel="modulepreload" href="https://ga.jspm.io/npm:@babel/runtime@7.14.8/helpers/esm/assertThisInitialized.js"/>
+  <link rel="modulepreload" href="https://ga.jspm.io/npm:@babel/runtime@7.14.8/helpers/esm/construct.js"/>
+  <link rel="modulepreload" href="https://ga.jspm.io/npm:@babel/runtime@7.14.8/helpers/esm/extends.js"/>
+  <link rel="modulepreload" href="https://ga.jspm.io/npm:@babel/runtime@7.14.8/helpers/esm/getPrototypeOf.js"/>
+  <link rel="modulepreload" href="https://ga.jspm.io/npm:@babel/runtime@7.14.8/helpers/esm/inheritsLoose.js"/>
+  <link rel="modulepreload" href="https://ga.jspm.io/npm:@babel/runtime@7.14.8/helpers/esm/isNativeFunction.js"/>
+  <link rel="modulepreload" href="https://ga.jspm.io/npm:@babel/runtime@7.14.8/helpers/esm/isNativeReflectConstruct.js"/>
+  <link rel="modulepreload" href="https://ga.jspm.io/npm:@babel/runtime@7.14.8/helpers/esm/setPrototypeOf.js"/>
+  <link rel="modulepreload" href="https://ga.jspm.io/npm:@babel/runtime@7.14.8/helpers/esm/taggedTemplateLiteralLoose.js"/>
+  <link rel="modulepreload" href="https://ga.jspm.io/npm:@babel/runtime@7.14.8/helpers/esm/wrapNativeSuper.js"/>
+  <link rel="modulepreload" href="https://ga.jspm.io/npm:@jspm/core@2.0.0-beta.7/_/de9a8dfb.js"/>
+  <link rel="modulepreload" href="https://ga.jspm.io/npm:@jspm/core@2.0.0-beta.7/nodelibs/process.js"/>
+  <link rel="modulepreload" href="https://ga.jspm.io/npm:@tweenjs/tween.js@18.6.4/dist/tween.cjs.js"/>
+  <link rel="modulepreload" href="https://ga.jspm.io/npm:accessor-fn@1.3.1/dist/accessor-fn.module.js"/>
+  <link rel="modulepreload" href="https://ga.jspm.io/npm:d3-array@3.0.1/src/index.js"/>
+  <link rel="modulepreload" href="https://ga.jspm.io/npm:d3-binarytree@0.2.0/dist/d3-binarytree.js"/>
+  <link rel="modulepreload" href="https://ga.jspm.io/npm:d3-color@3.0.1/src/index.js"/>
+  <link rel="modulepreload" href="https://ga.jspm.io/npm:d3-dispatch@3.0.1/src/index.js"/>
+  <link rel="modulepreload" href="https://ga.jspm.io/npm:d3-force-3d@3.0.2/src/index.js"/>
+  <link rel="modulepreload" href="https://ga.jspm.io/npm:d3-format@3.0.1/src/index.js"/>
+  <link rel="modulepreload" href="https://ga.jspm.io/npm:d3-interpolate@3.0.1/src/index.js"/>
+  <link rel="modulepreload" href="https://ga.jspm.io/npm:d3-octree@0.2.0/dist/d3-octree.js"/>
+  <link rel="modulepreload" href="https://ga.jspm.io/npm:d3-quadtree@3.0.1/src/index.js"/>
+  <link rel="modulepreload" href="https://ga.jspm.io/npm:d3-scale-chromatic@3.0.0/src/index.js"/>
+  <link rel="modulepreload" href="https://ga.jspm.io/npm:d3-scale@4.0.0/src/index.js"/>
+  <link rel="modulepreload" href="https://ga.jspm.io/npm:d3-time-format@4.0.0/src/index.js"/>
+  <link rel="modulepreload" href="https://ga.jspm.io/npm:d3-time@3.0.0/src/index.js"/>
+  <link rel="modulepreload" href="https://ga.jspm.io/npm:d3-timer@3.0.1/src/index.js"/>
+  <link rel="modulepreload" href="https://ga.jspm.io/npm:data-joint@1.2.3/dist/data-joint.common.js"/>
+  <link rel="modulepreload" href="https://ga.jspm.io/npm:debounce@1.2.1/index.js"/>
+  <link rel="modulepreload" href="https://ga.jspm.io/npm:goober@2.0.39/dist/goober.modern.js"/>
+  <link rel="modulepreload" href="https://ga.jspm.io/npm:goober@2.0.39/global/dist/goober-global.modern.js"/>
+  <link rel="modulepreload" href="https://ga.jspm.io/npm:goober@2.0.39/prefixer/dist/goober-autoprefixer.modern.js"/>
+  <link rel="modulepreload" href="https://ga.jspm.io/npm:index-array-by@1.3.1/dist/index-array-by.common.js"/>
+  <link rel="modulepreload" href="https://ga.jspm.io/npm:internmap@2.0.1/src/index.js"/>
+  <link rel="modulepreload" href="https://ga.jspm.io/npm:kapsule@1.13.4/dist/kapsule.common.js"/>
+  <link rel="modulepreload" href="https://ga.jspm.io/npm:ngraph.events@1.2.1/index.js"/>
+  <link rel="modulepreload" href="https://ga.jspm.io/npm:ngraph.forcelayout@3.1.0/index.js"/>
+  <link rel="modulepreload" href="https://ga.jspm.io/npm:ngraph.graph@19.1.0/index.js"/>
+  <link rel="modulepreload" href="https://ga.jspm.io/npm:ngraph.merge@1.0.0/index.js"/>
+  <link rel="modulepreload" href="https://ga.jspm.io/npm:ngraph.random@1.1.0/index.js"/>
+  <link rel="modulepreload" href="https://ga.jspm.io/npm:object-assign@4.1.1/index.js"/>
+  <link rel="modulepreload" href="https://ga.jspm.io/npm:offscreen-canvas@0.1.1/create-worker.js"/>
+  <link rel="modulepreload" href="https://ga.jspm.io/npm:offscreen-canvas@0.1.1/inside-worker.js"/>
+  <link rel="modulepreload" href="https://ga.jspm.io/npm:polished@4.1.3/dist/polished.esm.js"/>
+  <link rel="modulepreload" href="https://ga.jspm.io/npm:react-dom@17.0.2/cjs/react-dom.production.min.js"/>
+  <link rel="modulepreload" href="https://ga.jspm.io/npm:react-dom@17.0.2/index.js"/>
+  <link rel="modulepreload" href="https://ga.jspm.io/npm:react@17.0.2/cjs/react.production.min.js"/>
+  <link rel="modulepreload" href="https://ga.jspm.io/npm:react@17.0.2/index.js"/>
+  <link rel="modulepreload" href="https://ga.jspm.io/npm:react@17.0.2/jsx-runtime.js"/>
+  <link rel="modulepreload" href="https://ga.jspm.io/npm:scheduler@0.20.2/index.js"/>
+  <link rel="modulepreload" href="https://ga.jspm.io/npm:three-forcegraph@1.39.1/dist/three-forcegraph.module.js"/>
+  <link rel="modulepreload" href="https://ga.jspm.io/npm:three-render-objects@1.26.4/dist/three-render-objects.module.js"/>
+  <link rel="modulepreload" href="https://ga.jspm.io/npm:three-spritetext@1.6.2/dist/three-spritetext.common.js"/>
+  <link rel="modulepreload" href="https://ga.jspm.io/npm:three@0.130.1/build/three.module.js"/>
+  <link rel="modulepreload" href="https://ga.jspm.io/npm:three@0.130.1/examples/jsm/controls/DragControls.js"/>
+  <link rel="modulepreload" href="https://ga.jspm.io/npm:three@0.130.1/examples/jsm/controls/FlyControls.js"/>
+  <link rel="modulepreload" href="https://ga.jspm.io/npm:three@0.130.1/examples/jsm/controls/OrbitControls.js"/>
+  <link rel="modulepreload" href="https://ga.jspm.io/npm:three@0.130.1/examples/jsm/controls/TrackballControls.js"/>
+  <link rel="modulepreload" href="https://ga.jspm.io/npm:three@0.130.1/examples/jsm/postprocessing/EffectComposer.js"/>
+  <link rel="modulepreload" href="https://ga.jspm.io/npm:three@0.130.1/examples/jsm/postprocessing/MaskPass.js"/>
+  <link rel="modulepreload" href="https://ga.jspm.io/npm:three@0.130.1/examples/jsm/postprocessing/Pass.js"/>
+  <link rel="modulepreload" href="https://ga.jspm.io/npm:three@0.130.1/examples/jsm/postprocessing/RenderPass.js"/>
+  <link rel="modulepreload" href="https://ga.jspm.io/npm:three@0.130.1/examples/jsm/postprocessing/ShaderPass.js"/>
+  <link rel="modulepreload" href="https://ga.jspm.io/npm:three@0.130.1/examples/jsm/shaders/CopyShader.js"/>
+  <link rel="modulepreload" href="https://ga.jspm.io/npm:tinycolor2@1.4.2/tinycolor.js"/>
+
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <script async type="module-shim" src="./app.js"></script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+{
+  "env": {
+    "targets": {
+      "node": "16"
+    },
+    "mode": "usage",
+    "loose": true
+  },
+  "sourceMaps": true,
+  "jsc": {
+    "parser": {
+      "syntax": "typescript",
+      "tsx": true,
+      "dynamicImport": true
+    },
+    "loose": true,
+    "keepClassNames": true
+  },
+  "module": {
+    "type": "commonjs"
+  }
+}
