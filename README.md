@@ -30,16 +30,16 @@ docker-compose up
 ## Design Descisions and Considerations
 
 #### Rest vs GraphQL
-Normally I always incorperate OpenAPI. That means designing the API in OpenAPI, then using code to create endpoints, REST and GraphQL in HTTP and WS, that conform to that specification. However that would take more time than I was willing to put into this project. :P So I just stuck with GraphQL.
+Normally I always incorperate OpenAPI. That means designing the API in OpenAPI, then using code to create endpoints (REST and GraphQL in HTTP and WS) that conform to that specification. However that would take more time than I was willing to put into this project. :P So I just stuck with GraphQL.
 
 #### Graphql Client Library
-I `swr` over `apollo-client` because I wanted something lightweight. I'm sure something like apollo or relay have many more features but I like to keep the app weight (kbs) low and fast. Also the switch can be made later if it's determined a feature from another library would be useful.
+I chose `swr` over `apollo-client` because I wanted something lightweight. I'm sure apollo or relay have many more features but I like to keep the app weight (kbs) low and the application fast. Also the switch can be made later if it's determined a feature from another library would be useful.
 
 #### Graph Library
-At first I tried to use Sayari's trellis but it seemed to have issues being loaded as an es module. So instead I chose `3d-force-graph` because it was webgl based and had good documentation. I really wish it had worked in a web worker :(
+At first I tried to use Sayari's trellis but it seemed to have issues being loaded as an es module in the browser. So instead I chose `3d-force-graph` because it was webgl based and had good documentation. Though I really wish it had worked in a web worker :(
 
 #### Database
-Redisgraph provide a high perforamnce graph database. Also I don't think some people know that redis can and has been used as a primary database. It has reliable persistence and active-active support.
+Redisgraph provide a high performance graph database. It has reliable persistence and active-active support for scaling.
 
 Redis is an in memory database. Datasets might get too large and become larger than the avaliable memory. This can be alleviated by using hybrid storage solutions in redis (Redis on Flash) and keydb (FLASH). 
 
@@ -47,9 +47,9 @@ Redis is an in memory database. Datasets might get too large and become larger t
 I have been using Preact a lot laterly but didn't want to run into any compatibility issues, so I stuck with React for this one.
 
 #### Web Server
-This one I assume is an interesting choice. There are some many web servers out there, even for node. I chose `uWebsockets.js` because it has very high performance, not much more complex than express, and the possibility of using websockets baked in (thats always a good door to leave open).
+This one I assume is an interesting choice. There are some many web servers out there, even for node. I chose `uWebsockets.js` because it has very high performance, not much more complex than express, and has the possibility of using websockets baked in (thats always a good door to leave open).
 
-The one thing I might have changed is serving the compiled UI from nginx instead of from node.
+The one thing I might have changed is serving the compiled UI from nginx instead of from node when in production.
 
 ## Features
 * When not in development mode (NODE_ENV=development) console output is provided in machine readable format.
