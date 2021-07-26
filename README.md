@@ -5,6 +5,7 @@ This is a developer challenge to build an app based on a stackoverflow like data
 Time: 40 - 50 hours (I had fun)
 
 ![A complex query](https://github.com/FallingSnow/sayari-demo/raw/master/screenshots/main.jpg "A complex query")
+![database](https://github.com/FallingSnow/sayari-demo/raw/master/screenshots/database.jpg "database")
 
 ## Usage
 
