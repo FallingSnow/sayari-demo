@@ -18,7 +18,7 @@ COPY . /opt/app
 
 EXPOSE 80
 
-HEALTHCHECK --interval=30s --timeout=5s --start-period=5s --retries=3 CMD "echo \"HEAD / HTTP/1.0\" >/dev/tcp/localhost/80"
+HEALTHCHECK --interval=30s --timeout=5s --start-period=5s --retries=3 CMD "bash -c 'echo \"HEAD / HTTP/1.0\" >/dev/tcp/localhost/80'"
 
 WORKDIR "/opt/app"
 
